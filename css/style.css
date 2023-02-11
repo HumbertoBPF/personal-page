@@ -1,0 +1,133 @@
+:root {
+    --text-large: 18px;
+    --text-regular: 14px;
+    --hover-color: #E9ECEF;
+    --primary-color: #00CCFF;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    background-color: var(--primary-color);
+}
+
+.nav-link {
+    color: white;
+    font-weight: bold;
+    font-size: var(--text-large);
+}
+
+.nav-link:hover, .nav-link:focus {
+    color: var(--hover-color);
+    font-weight: bold;
+    font-size: var(--text-large);
+}
+
+main {
+    padding: 16px 8px;
+    background-color: white;
+}
+
+h1 {
+    font-size:  var(--text-large);
+    font-weight: bold;
+    margin: 0;
+}
+
+h2 {
+    font-size:  var(--text-regular);
+    font-weight: bold;
+    margin: 16px 0px 16px 0px;
+}
+
+p, ul {
+    font-size: var(--text-regular);
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-position: inside;
+}
+
+.profile-card, .experience-card {
+    width: 100%;
+    display: inline-block;
+    margin: 16px 0px 0px 0px;
+}
+
+.profile-card img {
+    width: 100%;
+    box-sizing: border-box;
+    float: left;
+    border-radius: 4px;
+}
+
+.experience-card {
+    background-color: var(--hover-color);
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.experience-card img {
+    width: 50%;
+    box-sizing: border-box;
+    border-radius: 4px;
+    display: block;
+    margin: auto;
+}
+
+.experience-card p  {
+    margin: 0;
+}
+
+footer {
+    padding: 8px;
+    color: white;
+    clear: left;
+}
+
+footer h1 {
+    margin: 0 0 16px 0;
+}
+
+footer a, footer a:hover {
+    color: white;
+    font-size: var(--text-regular);
+    text-decoration: none;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+@media screen and (min-width: 576px) {
+    .profile-card img, .experience-card img  {
+        width: 50%;
+        padding: 0 16px 0 0;
+    }
+
+    .experience-card img  {
+        float: left;
+    }
+
+    .experience-card div  {
+        width: 50%;
+        display: inline-block;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .profile-card img {
+        width: 25%;
+    }
+
+    .experience-card img {
+        width: 16.66%;
+    }
+
+    .experience-card div  {
+        width: 83.33%;
+    }
+}
